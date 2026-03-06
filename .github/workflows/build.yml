@@ -1,8 +1,23 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  firmware_build:
-    name: Build the ZMK firmware
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-    with:
-      archive_name: zmk-firmwares
+  build:
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Left Side (roBa_L)
+        uses: zmkfirmware/zmk/app/actions/build@main
+        with:
+          board: seeeduino_xiao_ble
+          shield: roBa_L
+          artifact-name: roBa_L_firmware
+
+      - name: Build Right Side (roBa_R)
+        uses: zmkfirmware/zmk/app/actions/build@main
+        with:
+          board: seeeduino_xiao_ble
+          shield: roBa_R
+          artifact-name: roBa_R_firmware
