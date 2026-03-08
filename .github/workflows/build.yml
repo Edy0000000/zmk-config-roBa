@@ -2,22 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    name: Build
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Build Left Side
-        uses: zmkfirmware/zmk/app/actions/build@v1
-        with:
-          board: seeeduino_xiao_ble
-          shield: roBa_L
-          artifact-name: roBa_L
-
-      - name: Build Right Side
-        uses: zmkfirmware/zmk/app/actions/build@v1
-        with:
-          board: seeeduino_xiao_ble
-          shield: roBa_R
-          artifact-name: roBa_R
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
