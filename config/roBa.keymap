@@ -54,27 +54,27 @@
         default_layer {
             bindings = <
 &kp Q           &kp W         &kp E           &kp R             &kp T                                           &kp Y    &kp U  &lt 5 I    &kp O    &kp P
-&kp A           &kp S         &lt 3 D         &lt 1 F           &kp G        &kp TAB           &kp LEFT_ARROW   &kp H    &kp J  &lt 2 K    &kp L    &kp APOS
+&kp A           &kp S         &lt 3 D         &lt 1 F           &kp G        &kp TAB           &kp LEFT_ARROW   &kp H    &kp J  &lt 2 K    &kp L    &kp SEMI
 &kp Z           &kp X         &kp C           &kp V             &lt 6 B      &kp CAPSLOCK      &kp RIGHT_ARROW  &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &kp LEFT_WIN  &lt 3 LEFT_ALT  &kp LEFT_CONTROL  &lt 2 SPACE  &kp LEFT_ALT      &kp BACKSPACE    &kp RET                             &to 0
             >;
         };
 
-        FUNCTION {
+        NUM-FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2   &kp F3  &kp F4   &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F6   &kp F7  &kp F8   &kp F9  &kp F10  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &kp ESC  &trans  &kp F12  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp DEL  &trans                            &trans
+&none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH                         &kp F1  &kp F2   &kp F3  &kp F4   &kp F5
+&none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(APOS)  &none      &kp F6   &kp F7  &kp F8   &kp F9  &kp F10  &kp F11
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &none      &kp ESC  &trans  &kp F12  &trans  &trans   &trans
+&trans           &none            &none            &kp CARET        &kp LS(SEMI)  &none      &kp DEL  &trans                            &trans
             >;
         };
 
-        NUM-SYMBOL {
+        SYMBOL {
             bindings = <
-&none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH                                     &kp EXCLAMATION  &kp LS(N2)  &kp HASH       &kp DOLLAR    &kp MINUS
-&none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SINGLE_QUOTE)  &none       &kp LS(N5)  &kp LS(N6)       &kp LS(N8)  &kp LS(N9)     &kp LS(SEMI)  &kp LBKT
-&none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS             &none       &kp LS(N7)  &kp EQUAL        &kp RBKT    &kp BACKSLASH  &kp QUESTION  &kp LS(INTERNATIONAL_1)
-&kp KP_NUMBER_0  &none            &none            &kp KP_EQUAL     &kp LS(SEMI)          &trans      &trans      &trans                                                    &kp INTERNATIONAL_3
+&none   &kp EXCL  &kp LS(N2)  &kp HASH  &kp LS(DOLLAR)                     &kp LS(N7)  &kp LS(N8)    &kp LS(N9)     &kp MINUS  &kp LBKT
+&none   &none     &none       &none     &kp LS(N5)      &none      &none   &kp LS(N6)  &kp LS(LBKT)  &kp LS(RBKT)   &kp CARET  &kp APOS
+&none   &none     &none       &none     &none           &none      &none   &kp EQUAL   &kp RBKT      &kp BACKSLASH  &kp PIPE   &kp LS(INTERNATIONAL_1)
+&trans  &none     &none       &none     &none           &none      &trans  &trans                                              &kp INTERNATIONAL_3
             >;
         };
 
