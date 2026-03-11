@@ -62,10 +62,10 @@
 
         NUM-FUNCTION {
             bindings = <
-&none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH                         &kp F1  &kp F2   &kp F3  &kp F4   &kp F5
-&none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(APOS)  &none      &kp F6   &kp F7  &kp F8   &kp F9  &kp F10  &kp F11
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &none      &kp ESC  &trans  &kp F12  &trans  &trans   &trans
-&trans           &none            &none            &kp LS(MINUS)    &kp LS(SEMI)  &none      &kp DEL  &trans                            &trans
+&none   &kp N7  &kp N8  &kp N9         &kp SLASH                         &kp F1  &kp F2   &kp F3  &kp F4   &kp F5
+&none   &kp N4  &kp N5  &kp N6         &kp LS(APOS)  &none      &kp F6   &kp F7  &kp F8   &kp F9  &kp F10  &kp F11
+&kp N0  &kp N1  &kp N2  &kp N3         &kp MINUS     &none      &kp ESC  &trans  &kp F12  &trans  &trans   &trans
+&trans  &none   &none   &kp LS(MINUS)  &kp LS(SEMI)  &none      &kp DEL  &trans                            &trans
             >;
         };
 
