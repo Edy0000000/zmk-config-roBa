@@ -42,7 +42,7 @@
         default_layer_mac {
             bindings = <
 &kp Q               &kp W         &kp E         &kp R             &kp T                                              &kp Y    &kp U  &lt 6 I    &kp O    &kp P
-&mt A LEFT_CONTROL  &kp S         &lt 4 D       &lt 2 F           &kp G        &kp TAB               &sl 1           &kp H    &kp J  &lt 2 K    &kp L    &kp SEMI
+&mt LEFT_CONTROL A  &kp S         &lt 4 D       &lt 2 F           &kp G        &kp TAB               &to 1           &kp H    &kp J  &lt 2 K    &kp L    &kp SEMI
 &kp Z               &kp X         &kp C         &kp V             &lt 7 B      &kp LANGUAGE_2        &kp LANGUAGE_1  &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT      &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 3 SPACE  &kp LEFT_COMMAND      &kp BACKSPACE   &kp RET                             &kp GLOBE
             >;
@@ -51,7 +51,7 @@
         defalt_layer_windows {
             bindings = <
 &kp Q           &kp W         &kp E         &kp R             &kp T                                            &kp Y    &kp U  &lt 6 I    &kp O    &kp P
-&kp A           &kp S         &lt 4 D       &lt 2 F           &kp G        &kp TAB             &sl 0           &kp H    &kp J  &lt 2 K    &kp L    &kp SEMI
+&kp A           &kp S         &lt 4 D       &lt 2 F           &kp G        &kp TAB             &to 0           &kp H    &kp J  &lt 2 K    &kp L    &kp SEMI
 &kp Z           &kp X         &kp C         &kp V             &lt 7 B      &kp LANGUAGE_2      &kp LANGUAGE_1  &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 3 SPACE  &kp LEFT_ALT        &kp BACKSPACE   &kp RET                             &none
             >;
