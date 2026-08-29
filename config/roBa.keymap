@@ -35,11 +35,11 @@
             tapping-term-ms = <200>;
         };
 
-        shift_capslock: shift_capslock {
+        dp_shift_capslock: dp_shift_capslock {
             compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_CAPSLOCK";
+            label = "DP_SHIFT_CAPSLOCK";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
     };
 
@@ -51,7 +51,7 @@
 &kp Q               &kp W         &kp E         &kp R             &kp T                                              &kp Y    &kp U  &lt 6 I    &kp O    &kp P
 &mt LEFT_CONTROL A  &kp S         &lt 4 D       &lt 2 F           &kp G        &kp TAB               &to 1           &kp H    &kp J  &lt 2 K    &kp L    &kp SEMI
 &kp Z               &kp X         &kp C         &kp V             &lt 7 B      &kp LANGUAGE_2        &kp LANGUAGE_1  &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&shift_capslock     &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 3 SPACE  &kp LEFT_COMMAND      &kp BACKSPACE   &kp RET                             &kp GLOBE
+&dp_shift_capslock  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 3 SPACE  &kp LEFT_COMMAND      &kp BACKSPACE   &kp RET                             &kp GLOBE
             >;
         };
 
