@@ -34,6 +34,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        shift_capslock: shift_capslock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFT_CAPSLOCK";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
+        };
     };
 
     keymap {
@@ -44,7 +51,7 @@
 &kp Q               &kp W         &kp E         &kp R             &kp T                                              &kp Y    &kp U  &lt 6 I    &kp O    &kp P
 &mt LEFT_CONTROL A  &kp S         &lt 4 D       &lt 2 F           &kp G        &kp TAB               &to 1           &kp H    &kp J  &lt 2 K    &kp L    &kp SEMI
 &kp Z               &kp X         &kp C         &kp V             &lt 7 B      &kp LANGUAGE_2        &kp LANGUAGE_1  &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT      &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 3 SPACE  &kp LEFT_COMMAND      &kp BACKSPACE   &kp RET                             &kp GLOBE
+&shift_capslock     &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 3 SPACE  &kp LEFT_COMMAND      &kp BACKSPACE   &kp RET                             &kp GLOBE
             >;
         };
 
@@ -62,7 +69,7 @@
 &kp ESCAPE  &kp N7  &kp N8  &kp N9         &kp SLASH                                                  &kp F1  &kp F2   &kp F3   &kp F4  &kp F5
 &none       &kp N4  &kp N5  &kp N6         &kp LS(APOS)  &kp C_BRIGHTNESS_INC      &kp C_VOL_UP       &kp F6  &kp F7   &kp F8   &kp F9  &kp F10
 &kp N0      &kp N1  &kp N2  &kp N3         &kp MINUS     &kp C_BRIGHTNESS_DEC      &kp C_VOLUME_DOWN  &none   &kp F11  &kp F12  &none   &kp LC(LS(LG(NUMBER_4)))
-&none       &none   &none   &kp LS(MINUS)  &kp LS(SEMI)  &none                     &kp DELETE         &trans                            &kp CAPSLOCK
+&none       &none   &none   &kp LS(MINUS)  &kp LS(SEMI)  &none                     &kp DELETE         &trans                            &none
             >;
         };
 
